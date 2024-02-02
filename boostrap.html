@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Boostrap 5</title>
+    <!-- Navbar Start -->
+    <style>
+        body {
+            background: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            scroll-behavior: smooth;
+        }
+
+        #navbar {
+            background: #f9f9f9;
+        }
+
+        #logo #span1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        #logo #span1 {
+            color: #ffa500;
+        }
+
+        #logo #span2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        #logo #span3 {
+            margin-bottom: 5px;
+            color: rgb(199, 5, 106);
+            text-shadow: 0px 1px 1px black;
+            font-family: cursive;
+        }
+
+        .navbar-toggler span {
+            color: black;
+        }
+
+        .navbar-nav {
+            margin-left: 20px;
+        }
+
+        .nav-item .nav-link {
+            font-size: 16px;
+            font-weight: 700;
+            color: black;
+            letter-spacing: 0.2px;
+            border: 3px;
+        }
+
+        .nav-item .nav-link:hover {
+            background: #ffa500;
+            color: blue;
+            text-decoration: none;
+        }
+
+        #navbar form button {
+            background: orange;
+            color: white;
+            border: none;
+        }
+
+        .home {
+            width: 100%;
+            height: 120vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.2)),
+                url(car.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .home .content {
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        .home .content h5 {
+            color: rgb(194, 219, 7);
+            font-size: 38px;
+            font-weight: 500;
+            text-shadow: 0px 3px 3px black;
+        }
+
+        .content #n1 {
+
+            font-size: 36px;
+            font-weight: 700;
+            color: orange;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        .content #n2 {
+
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        .content #n3 {
+            margin-bottom: 5px;
+            color: rgb(199, 5, 106);
+            text-shadow: 0px 1px 1px black;
+            font-family: cursive;
+            font-size: large;
+        }
+
+        .home .content h1 {
+            color: rgb(6, 235, 228);
+            font-size: 70px;
+            font-weight: 600;
+            text-shadow: 0px 3px 3px black;
+            margin-top: 5px;
+        }
+
+        .home .content p {
+            color: red;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+
+        .changecontent::after {
+            content: " ";
+            color: #ffa500;
+            text-shadow: 0px 3px 3px black;
+            animation: changetext 10s infinite linear;
+        }
+
+        @keyframes changetext {
+            0% {
+                content: "Pune";
+            }
+
+            10% {
+                content: "Mumbai";
+            }
+
+            20% {
+                content: "Nashik";
+            }
+
+            30% {
+                content: "Nagpur";
+            }
+
+            40% {
+                content: "Dhule";
+            }
+
+            50% {
+                content: "Kolhapur";
+            }
+
+            60% {
+                content: "Amravati";
+            }
+
+            70% {
+                content: "Nanded";
+            }
+
+            80% {
+                content: "Satara";
+            }
+
+            90% {
+                content: "Akola";
+            }
+
+            100% {
+                content: "Latur";
+            }
+        }
+
+        .home .content a {
+            padding: 10px;
+            background: white;
+            color: black;
+            letter-spacing: 2px;
+            font-weight: 550;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .home .content a:hover {
+            background-color: #ffa500;
+            color: white;
+        }
+
+        @media (max-width: 850px) {
+            .home {
+                background-position: 50%;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .home .content h5 {
+                font-size: 20px;
+            }
+
+            .home .content h1 {
+                font-size: 38px;
+            }
+
+            .home .content p {
+                font-size: 13px;
+            }
+        }
+
+        .book {
+            background: white;
+            padding: 50px;
+        }
+
+        .main-text h1 {
+            text-align: center;
+            text-shadow: 0px 1px 1px black;
+            font-weight: 600;
+        }
+
+        .main-text h1 span {
+            color: blue;
+        }
+
+        .book .card {
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px 5px black;
+        }
+
+        .book .row {
+            margin-top: 30px;
+        }
+
+        .book form input {
+            padding: 10px;
+            color: black;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 5px -6px black;
+        }
+
+        .book form fieldset {
+            padding: 10px;
+            color: black;
+            resize: none;
+            font-size: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 5px -6px black;
+            height: 200px;
+        }
+
+        .book .submit {
+            width: 160px;
+            font-size: 16px;
+            font-weight: 550;
+            background: #ffa500;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .book .submit:hover {
+            width: 205px;
+        }
+
+       
+
+        .main-txt h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 600;
+            text-shadow: 0px 1px 1px black;
+        }
+
+        .main-txt span {
+            color: blue;
+        }
+
+        .packages .card {
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        .packages .card img {
+            border-radius: 5px;
+        }
+
+        .packages .card .card-body h3 {
+            font-weight: 600;
+        }
+
+        .checked {
+            color: #ffa500;
+        }
+
+        .star i {
+            font-size: 15px;
+        }
+
+        .packages .card .card-body a {
+            text-decoration: none;
+            padding: 10px;
+            background: #ffa500;
+            color: white;
+            border-radius: 5px;
+        }
+
+
+        .services {
+
+            margin-bottom: 20px;
+        }
+
+        .services .card {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .services .card i {
+            font-size: 80px;
+            text-align: center;
+            color: #ffa500;
+            margin-top: 20px;
+        }
+
+        .services .card .card-body h3 {
+            font-weight: 600;
+        }
+
+        .services .card .card-body {
+            text-align: center;
+        }
+
+
+        .container-fluid {
+            text-decoration: none;
+            background-color: #d8dadc;
+            text-align: center;
+
+            color: black;
+
+        }
+
+        .footer #footer .emoji {
+            margin-top: 20px;
+            font-size: 20px;
+            letter-spacing: 10px;
+            cursor: pointer;
+
+        }
+
+        #end {
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .card-body.click1{
+      
+        }
+
+
+
+    .Click1 {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f53266; /* Set your desired background color */
+        color: #fff; /* Set the text color */
+        text-decoration: none;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+      
+    }
+
+    .Click1:hover {
+        text-decoration: none;
+        color: black;
+        background-color:orange; /* Change the background color on hover */
+    }
+</style>
+
+
+
+    <!-- Navbar End -->
+
+    <script>
+        $(function () {
+
+            $("#showData").click(function () {
+                $("#showPanel").slideToggle(5000);
+            });
+        });
+    </script>
+    <style>
+        #showPanel {
+            display: none;
+            background: #f9f9f9;
+            color: black;
+        }
+
+        #showPanel p {
+            color: rgb(230, 59, 59);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+            font-size: larger;
+        }
+
+        #showData h3 {
+            font-weight: 500;
+            background: #f9f9f9;
+
+        }
+
+        #showData h3:hover {
+            cursor: pointer;
+
+        }
+
+        #showData #f1 {
+
+            font-size: 36px;
+            font-weight: 700;
+            color: orange;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        #showData #f2 {
+
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        #showData #f3 {
+            margin-bottom: 5px;
+            color: rgb(199, 5, 106);
+            text-shadow: 0px 1px 1px black;
+            font-family: cursive;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navbar Start -->
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" id="logo"><span id="span1">A</span><span id="span2">kshay</span>
+                <span id="span3"> Travelers</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login1">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#otherCars">OtherCars</a>
+                    </li>
+                </ul>
+                <form class="d-flex py-3">
+                    <input class="form-control me-2" id="search" type="text" placeholder="Search" />
+                    <a href="#search"><button class="btn btn-primary" type="button"><span
+                                class="glyphicon glyphicon-search"> </button></a>
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div id="showData">
+        <center>
+            <h3>Facilities offered by <span id="f1">A</span><span id="f2">kshay</span><span id="f3"> Travelers</span>
+                </h5>
+            </h3>
+
+        </center>
+    </div>
+    <div id="showPanel">
+        <center>
+            <p>Save Money & Time</p>
+            <p>The Finest Vehicles & Drivers</p>
+            <p>A Vehicle For Every Need</p>
+            <p>Sanitized Vehicles For Your Trip</p>
+
+        </center>
+
+    </div>
+
+    <!-- Home section start -->
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To <span id="n1">A</span><span id="n2">kshay</span><span id="n3"> Travelers</span></h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p>“Work, Travel, Save, Repeat.”.</p>
+            <a href="#book">Book place</a>
+        </div>
+    </div>
+
+    <!-- Home section End -->
+
+    <!-- section Book Start -->
+    <section class="book" id="book">
+        <div class="container">
+            <div class="main-text">
+                <h1><span>B</span>ook</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-5 py-3 py-md-0">
+                    <div class="card">
+                        <img src="pixels.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- Book Start -->
+                <script>
+                    function bookSlot() {
+                        var firstName = document.getElementById("firstName").value;
+                        var middleName1 = document.getElementById("MiddleName").value;
+                        var lastName1 = document.getElementById("lastName").value;
+                        var where1 = document.getElementById("where").value;
+                        var how1 = document.getElementById("how").value;
+                        var arrivals1 = document.getElementById("arrivals").value;
+                        var bookid1 = document.getElementById("bookid").value;
+                        var textarea1 = document.getElementById("textarea").value;
+                
+                        if (firstName === "" || middleName1 === "" || lastName1 === "" || where1 === "" || how1 === "" || arrivals1 === "") {
+                            return;
+                        }
+                
+                        var c = confirm("Do you want to Book Your slot with this Information");
+                        if (c === true) {
+                            document.write("<h1>Your slot has been successfully booked with the following information</h1>" + "First Name is:-" + firstName + "<br>" + "Middle Name is:-" + middleName1 + "<br>" + "Middle Name is:-" + lastName1
+                                + "<br>" + "Where to:-" + where1 + "<br>" + "how :-" + how1 + "<br>" + "Arrivals:-" + arrivals1 + "<br>" + "Others:-" + textarea1);
+                        }else{
+                            alert("Your request has been declined successfully.")
+                        }
+                    }
+                </script>
+                
+                
+                
+                
+
+                <div class="col-md-7 py-3 py-md-0">
+                    <form>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text">Full Name</span>
+                            <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
+                            <input type="text" id="MiddleName" class="form-control" placeholder="Middle Name" required>
+                            <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <br>
+                        <input type="text" id="where" class="form-control" placeholder="Where To" required /><br />
+                        <input type="text" id="how" class="form-control" placeholder="How Many" required /><br />
+                        <input type="date" id="arrivals" class="form-control" placeholder="Arrivals" required /><br />
+                        <textarea class="form-control" id="textarea" rows="5" name="text"
+                            placeholder="Anything here...."  required></textarea>
+                        <input type="submit" id="bookid" value="Book Now" class="submit" onclick="bookSlot()" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book End -->
+
+
+
+    <!-- Login Start -->
+    <div class="container" id="login1">
+        <div class="main-txt">
+            <h1><span>L</span>ogin</h1>
+        </div>
+        <div class="container mt-2" style="border: 2px solid black;">
+            <form action="#" class="was-validated">
+                <div class="Name">
+                    <label for="firstName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="Name" name="Name" placeholder=" Enter Your Name here"
+                        required>
+                    <div class="valid-feedback">Valid First Name</div>
+                    <div class="invalid-feedback">InValid First Name</div>
+
+                </div>
+
+                <div class="password">
+                    <label for="password" class="form-label">password</label>
+                    <input type="password" class="form-control" id="password" name="password"
+                        placeholder=" Enter Your password here" required>
+                    <div class="valid-feedback">Valid password</div>
+                    <div class="invalid-feedback">InValid password</div>
+
+                </div>
+                <br>
+
+
+
+
+                <div class="container">
+
+                    <label class="form-check-label ">Select Your City:-</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option1" value="pune" id="checkbox1">
+                        <label class="form-check-label">pune</label>
+                    </div>
+
+                    <div class="form-check ">
+                        <input class="form-check-input" type="checkbox" name="option2" value="Mumbai" id="checkbox2">
+                        <label class="form-check-label">Mumbai</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option3" value="Delhi" id="checkbox3">
+                        <label class="form-check-label">Delhi</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="option4" value="Nashik" id="checkbox4">
+                        <label class="form-check-label">Nashik</label>
+                    </div>
+
+
+
+                    <label class="form-check-label ">Select Your Gender:-</label>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" value="Male" id="radio1">
+                        <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" value="FeMale" id="radio2">
+                        <label class="form-check-label">Female</label>
+                    </div>
+
+                    <br><br>
+
+            </form>
+            <button type="submit" class="btn btn-danger" onclick="selectCity()">Submit</button>
+
+        </div>
+
+
+
+    </div>
+    <!-- login script start -->
+    <script>
+        function selectCity() {
+            var selectedCities = [];
+            var selectedgender = [];
+
+            var checkbox1 = document.getElementById("checkbox1");
+            var checkbox2 = document.getElementById("checkbox2");
+            var checkbox3 = document.getElementById("checkbox3");
+            var checkbox4 = document.getElementById("checkbox4");
+            var radio1 = document.getElementById("radio1");
+            var radio2 = document.getElementById("radio2");
+            var name = document.getElementById("Name").value;
+            var password = document.getElementById("password").value;
+
+            // Check if name and password are filled
+            if (name === "" || password === "") {
+                alert("Please fill in both name and password.");
+                return;
+            }
+
+            // Check if at least one city checkbox is selected
+            if (!checkbox1.checked && !checkbox2.checked && !checkbox3.checked && !checkbox4.checked) {
+                alert("Please select at least one city.");
+                return;
+            }
+
+            // Check if a gender radio button is selected
+            if (!radio1.checked && !radio2.checked) {
+                alert("Please select a gender.");
+                return;
+            }
+
+            if (checkbox1.checked) {
+                selectedCities.push(checkbox1.value);
+            }
+
+            if (checkbox2.checked) {
+                selectedCities.push(checkbox2.value);
+            }
+
+            if (checkbox3.checked) {
+                selectedCities.push(checkbox3.value);
+            }
+
+            if (checkbox4.checked) {
+                selectedCities.push(checkbox4.value);
+            }
+
+            if (radio1.checked) {
+                selectedgender.push(radio1.value);
+            }
+
+            if (radio2.checked) {
+                selectedgender.push(radio2.value);
+            }
+
+            document.write("<br>" + "Your Name is:- " + name + "<br>" + "Your Password is:- " + password + "<br>" + "Your selected cities are:- " + selectedCities.join(", ") + "<br>" + "Your gender is:- " + selectedgender.join(", "));
+        }
+    </script>
+
+
+
+    <!-- Login End -->
+
+
+
+
+    <!-- section Packages Start -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="main-txt">
+                <h1><span>P</span>ackages</h1>
+            </div>
+
+            <div class="row" style="margin-top: 30px">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="pune.jpg" alt="" />
+                        <div class="card-body">
+                            <h3>Pune</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                sunt.
+                            </p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$5,500</strong></h6>
+                            <a class="Click" href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="ak1.jpg" alt="" />
+                        <div class="card-body">
+                            <h3>Mumbai</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                sunt.
+                            </p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$3,230</strong></h6>
+                            <a class="Click" href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="ak2.jpg" alt="" />
+                        <div class="card-body">
+                            <h3>Nashik</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                sunt.
+                            </p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$4,000</strong></h6>
+                            <a class="Click" href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="ak3.jpg" alt="" />
+                        <div class="card-body">
+                            <h3>Satara</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                sunt.
+                            </p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$8,260</strong></h6>
+                            <a class="Click" href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="ak4.jpg" alt="" />
+                        <div class="card-body">
+                            <h3>Amravati</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                sunt.
+                            </p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$7,340</strong></h6>
+                            <a class="Click" href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="ak5.jpg" alt="" />
+                        <div class="card-body">
+                            <h3>Dhule</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                sunt.
+                            </p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price:<strong>$4,300</strong></h6>
+                            <a class="Click" href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section packages End -->
+
+    <!-- section Service Start-->
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="main-txt">
+                <h1><span>S</span>ervices</h1>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-hotel"></i>
+                        <div class="card-body">
+                            <h3>Affordable Hotels</h3>
+                            <p>Budget hotels you can look at include the Hotel Star Palace, Hotel Qubestay Airport,
+                                Hotel Moss View and Gold West Inn</p>
+                                <a class="Click1" href="#login1">Login</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-bullhorn"></i>
+                        <div class="card-body">
+                            <h3>Safty Guide</h3>
+                            <p>A safety manual is a collection of information, instructions, policies, and procedures
+                                safe operation of any tools.</p>
+                                <a class="Click1" href="#login1">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <div class="card-body">
+                            <h3>Food</h3>
+                            <p>Cooking is like love. It should be entered into with abandon or not at all.All happiness
+                                depends on a leisurely breakfast.</p>
+                                <a class="Click1" href="#login1">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="row" style="margin-top: 20px;">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-globe-asia"></i>
+                        <div class="card-body">
+                            <h3>Around the World</h3>
+                            <p> Travel has helped us to understand the meaning of life and it has helped us become
+                                better people.</p>
+
+                                <a class="Click1" href="#login1">Login</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-plane"></i>
+                        <div class="card-body">
+                            <h3>Fastest Travel</h3>
+                            <p>If you wish to travel far and fast, travel light. Take off all your envies, jealousies,
+                                unforgiveness, selfishness and fears.</p>
+                                <a class="Click1" href="#login1">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-hiking"></i>
+                        <div class="card-body">
+                            <h3>Adventures</h3>
+                            <p>Life should not be a journey to the grave with the intention of arriving safely in a
+                                pretty and well preserved body.</p>
+                                <a class="Click1" href="#login1">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- Grid Below other cars -->
+
+        <div class="container">
+            <div class="main-txt" id="otherCars">
+                <h1><span>O</span>thers cars
+                    <button type="button" class="btn" data-toggle="collapse" data-target="#demo">
+                        <h2><span class="glyphicon glyphicon-th"></span></h2>
+                    </button>
+
+                    <button type="button" class="btn" data-toggle="collapse" data-target="#demo1">
+                        <h2><span class="glyphicon glyphicon-th-list"></span></h2>
+                    </button>
+                </h1>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="demo" class="collapse">
+            <div class="container">
+                <div class="row">
+                    <!-- Create 3 columns in a row -->
+                    <div class="col-4">
+                        <div class="grid-item"> <a href="#login1">
+                                <div><img src="bus.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a> </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="ak3.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="grid-item"> <a href="#login1">
+                                <div><img src="bus2.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="xuv.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="thar.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="jimmy.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="hundai.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="polo.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="grid-item"><a href="#login1">
+                                <div><img src="pune.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                        height="400"></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- list -->
+        <div id="demo1" class="collapse">
+            <div class="container">
+                <ul class="list-group">
+                    <!-- Create 9 list items -->
+                    <li class="list-group-item"><a href="#login1">
+                            <div><img src="ak4.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                    height="400"></div>
+                        </a></li>
+                    <li class="list-group-item"><a href="#login1">
+                            <div><img src="polo.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                    height="400"></div>
+                        </a></li>
+                    <li class="list-group-item"><a href="#login1">
+                            <div><img src="xuv.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                    height="400"></div>
+                        </a></li>
+                    <li class="list-group-item"><a href="#login1">
+                            <div><img src="hundai.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                    height="400"></div>
+                        </a></li>
+                    <li class="list-group-item"><a href="#login1">
+                            <div><img src="jimmy.jpg" alt="test" class="img-thumbnail img-responsive" width="400"
+                                    height="400"></div>
+                        </a></li>
+
+                </ul>
+            </div>
+
+    </section>
+
+
+
+    
+
+        </div>
+        <!-- section Service Start-->
+
+    <div class="container-fluid ">
+        <div class="footer footer-expand-lg" id="footer">
+            <div class="container">
+                <a id="logo">
+                    <span id="span1">A</span><span id="span2">kshay</span>
+                    <span id="span3"> Travelers</span>
+                </a>
+            </div>
+            <div class="emoji">
+                <i class="fa-brands fa-twitter fa-beat fa-xl" style="color: #2408f7;"></i>
+                <i class="fa-brands fa-square-facebook fa-beat fa-xl" style="color: #4b04f1;"></i>
+                <i class="fa-brands fa-square-instagram fa-beat fa-xl" style="color: #d30993;"></i>
+
+            </div>
+
+
+
+            <br>
+            <div>
+                <div class="row" id="end">
+                    <!-- Create 3 columns in a row -->
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="grid-item">
+                            <ul class="Responsive">
+                                <li>CONTACT US</li>
+                                <li>TEAM</li>
+                                <li>CAREERS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="grid-item">
+                            <ul>
+                                <li>TERMS AND CONDITIONS</li>
+                                <li>ARCHITECTURAL DIGEST INDIA</li>
+                                <li>GQ INDIA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pcol-md-4 py-3 py-md-0-3 py-md-0">
+                        <div class="grid-item ">
+                            <ul>
+                                <li>ASSOCIATED SITES</li>
+                                <li>VOGUE INDIA</li>
+                                <li>CONNECT WITH CONDÉ NAST TRAVELLER INDIA</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div>© 2023 Condé Nast. All rights reserved. Use of this website constitutes acceptance of our Terms of
+                    Service (updated April 1, 2021) and Policy and Cookie Statement (updated April 1, 2021). The
+                    material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,
+                    except with the prior written permission of Condé Nast.</div>
+
+            </div>
+
+</body>
+
+</html>
